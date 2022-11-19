@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETA</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles/style.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div
+          class="col-auto col-md-3 col-xl-2 px-sm-2 px-0"
+          style="background-color: #b2d3c2"
+        >
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100"
+            style="color: black"
+          >
+            <p
+              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <span
+                class="fs-5 d-none d-sm-inline"
+                style="color: black; font-weight: bold"
+                >Personal Expense Tracker</span
+              >
+            </p>
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li
+                class="nav-item mt-2"
+                style="
+                  background-color: #00ad83;
+                  height: 50px;
+                  width: 150px;
+                  border-radius: 5px;
+                "
+              >
+                <a
+                  href="Dashboard.html"
+                  class="nav-link align-middle px-0"
+                  style="color: black"
+                >
+                  <span class="ms-1 d-none d-sm-inline">Home</span>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  href="Expense.html"
+                  class="nav-link px-0 align-middle"
+                  style="color: black"
+                >
+                  <span class="ms-1 d-none d-sm-inline">Add Expense</span>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  href="modifyexpense.html"
+                  class="nav-link px-0 align-middle"
+                  style="color: black"
+                >
+                  <span class="ms-1 d-none d-sm-inline">Modify Expense</span>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  href="analysis.html"
+                  class="nav-link px-0 align-middle"
+                  style="color: black"
+                >
+                  <span class="ms-1 d-none d-sm-inline">View Analysis</span>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  href="rewards.html"
+                  class="nav-link px-0 align-middle"
+                  style="color: black"
+                >
+                  <span class="ms-1 d-none d-sm-inline">Rewards & Goals</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col py-3" style="background-color: black">
+          <h3 style="color: white; text-align: center">
+            Welcome Back! Here are your expenses:
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script src="{{url_for('static', filename='js/js.js')}}"></script>
+
+    <!-- ----------Smooth Scroll-------------   
+    <script src="smooth-scroll.js"></script>
+    <script>
+	   var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+     -->
+  </body>
+</html>
